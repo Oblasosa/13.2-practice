@@ -6,7 +6,12 @@ Examples:
     hasOddNumber([2,2,2,2,2,4]) // false
 */
 
-function hasOddNumber(arr) {}
+function hasOddNumber(arr) {
+    for (let i=0; i < arr.length; i++) {
+        if (arr[i] % 2 !== 0) return true;
+    };
+    return false;
+}
 
 /*
 Write a function called hasAZero which accepts a number and returns true if that number contains at least one zero. Otherwise, the function should return false
